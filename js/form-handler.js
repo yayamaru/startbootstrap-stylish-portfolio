@@ -3,7 +3,6 @@ function myCheck() {
     var sum = 0;
     for (var i = 0; i < fruits.length; i++) {
       if (fruits[i].checked) {
-        console.log(typeof(sum));
         sum += parseInt(fruits[i].value);
       }
     }
