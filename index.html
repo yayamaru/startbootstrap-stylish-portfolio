@@ -195,13 +195,19 @@
     <!-- Choose -->
     <section class="content-section bg-light" id="jsloop">
       <div class="container text-center">
-        <h2 class="mx-auto mb-5"> Choose </h2>
-        <form name="jsloopform">
-          <input type="checkbox" name="fruit" value="りんご">りんご, 1,000JPY<br>
-          <input type="checkbox" name="fruit" value="バナナ">バナナ, 2,000JPY<br>
-          <input type="checkbox" name="fruit" value="オレンジ">オレンジ, 3,000JPY<br>
-          <input type="button" value="選択" onclick="myCheck();"> 
-        </form>
+        <div>
+          <h2 class="mx-auto mb-5"> Choose </h2>
+          <form name="fruitform">
+            <input type="checkbox" name="fruits" value="1000">Apple, 1,000JPY<br>
+            <input type="checkbox" name="fruits" value="2000">Banana, 2,000JPY<br>
+            <input type="checkbox" name="fruits" value="3000">Orange, 3,000JPY<br>
+            <input type="button" value="選択" onclick="myCheck();"> 
+          </form>
+        </div>
+        <div style="text-decoration: underline"><strong>Total: 
+          <span id = "fruit-sum">
+          </span> JPY.</strong>
+        </div>
       </div>
     </section>    
 
@@ -238,6 +244,7 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/stylish-portfolio.min.js"></script>
+    <script src="js/form-handler.js"></script>
 
   </body>
 
